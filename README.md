@@ -9,7 +9,7 @@ Add `mirror.kak` to your autoload dir: `~/.config/kak/autoload/`.
 Or via [plug.kak](https://github.com/andreyorst/plug.kak):
 
 ```
-plug 'delapouite/kakoune-mirror' %{
+plug 'lelgenio/kakoune-mirror-colemak' %{
   # Suggested mapping
   map global normal "'" ': enter-user-mode -lock mirror<ret>'
 }
@@ -23,11 +23,11 @@ For example with the above mapping, press `'` to enter the mirror mode (`<esc>` 
 
 ### Grow / shrink
 
-If you type `l` it grows the selections one char to their right, but also one char to their left.
+If you type `o` it grows the selections one char to their right, but also one char to their left.
 To shrink it one char, use `h`.
 When the cursor is before the anchor, it does the opposite.
 
-**Example**: the current selection is the middle `l`. Typing `'llhh` would produce these visual steps:
+**Example**: the current selection is the middle `o`. Typing `'oonn` would produce these visual steps:
 ```
 he[l]lo
 h[ell]o
