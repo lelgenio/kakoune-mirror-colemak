@@ -1,6 +1,6 @@
 # kakoune-mirror
 
-[kakoune](http://kakoune.org) plugin to grow / shrink selections in both directions or surround them.
+[kakoune](http://kakoune.org) plugin to add/remove/change surroundings of selections.
 
 ## Install
 
@@ -19,29 +19,7 @@ plug 'lelgenio/kakoune-mirror-colemak' %{
 
 This plugin provides a `mirror` user-mode.
 
-For example with the above mapping, press `'` to enter the mirror mode (`<esc>` to leave).
-
-### Grow / shrink
-
-If you type `o` it grows the selections one char to their right, but also one char to their left.
-To shrink it one char, use `h`.
-When the cursor is before the anchor, it does the opposite.
-
-**Example**: the current selection is the middle `o`. Typing `'oonn` would produce these visual steps:
-```
-he[l]lo
-h[ell]o
-[hello]
-h[ell]o
-he[l]lo
-```
-
-You can also use `w` to grow one word to the right and it automatically do a `b` on the left.
-
-It works vertically with `j` and `k`. Or `J` and `K` for full lines.
-Hitting `c` will expand by columns above and below.
-
-Finally you can also do it for paragraphs or sentences with `p` and `s`.
+For example with the above mapping, press `'` to enter the mirror mode.
 
 ### Surround
 
