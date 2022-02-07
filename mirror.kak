@@ -16,6 +16,7 @@ map global mirror "'" "a'<esc>i'<esc>H<a-;>"                          -docstring
 map global mirror '`' 'a`<esc>i`<esc>H<a-;>'                          -docstring '`surround`'
 map global mirror d 'Z<a-S><a-d>z<a-:>H'                              -docstring 'delete'
 map global mirror c 'Z<a-S><a-d>z<a-:>H: enter-user-mode mirror<ret>' -docstring 'change'
+map global mirror <ret> 'i<ret><esc>Ha<ret><esc>_'                    -docstring 'add newlines around'
 
 # insert/delete aliases
 map global mirror b 'a)<esc>i(<esc>H<a-;>'                            -docstring '(surround)'
